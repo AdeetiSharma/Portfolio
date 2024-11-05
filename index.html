@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditi Sharma - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles"></div>
+    <header>
+        <h1>Aditi Sharma</h1>
+        <h2>Software Developer</h2>
+        <p>Recent software engineering graduate with a solid foundation in software design and development. Proficient in JavaScript, C++, with experience in React.js and Node.js through academic projects and internships. Passionate about coding, with a strong work ethic and eagerness to learn. Excited to contribute to dynamic teams and create innovative solutions.</p>
+    </header>
+    
+    <section id="skills">
+        <h3>Skills</h3>
+        <div class="skill-category">
+            <h4>Programming Languages</h4>
+            <p>C, C++, HTML, JavaScript, MERN</p>
+        </div>
+        <div class="skill-category">
+            <h4>Tools and Technologies</h4>
+            <p>Android Studio, VSCode, GitHub, Eclipse</p>
+        </div>
+        <div class="skill-category">
+            <h4>Technical Electives</h4>
+            <p>DSA, OOPs, DBMS, Networking, Operating System, Cloud Services</p>
+        </div>
+        <div class="skill-category">
+            <h4>Soft Skills</h4>
+            <p>Communication, Problem-solving, Teamwork, Adaptability, Time Management</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h3>Projects</h3>
+        <div class="project">
+            <h4>Memories</h4>
+            <p>Designed for users to seamlessly share photos with close friends. It offers a streamlined experience with a profile page, feed, and a contact page. Users can easily upload their photos, connect with friends with a focus on simplicity and secure access.</p>
+            <a href="https://github.com/AdeetiSharma/Memories.git" target="_blank" class="source-code-btn">View Source Code</a>
+        </div>
+        <div class="project">
+            <h4>Pinterest Clone</h4>
+            <p>Developed a Pinterest clone application using Node.js, Express, and MongoDB, featuring secure user authentication with password and a user-friendly interface for profile management to enable easy personalization of account information.</p>
+            <a href="https://github.com/AdeetiSharma/Pinterest-Clone.git" target="_blank" class="source-code-btn">View Source Code</a>
+        </div>
+        <div class="project">
+            <h4>Barber Shop</h4>
+            <p>Developed a barber shop website using PHP and MySQL, featuring secure user authentication with encrypted password storage and an intuitive interface for online appointment booking.</p>
+            <a href="https://github.com/AdeetiSharma/Barber-Shop.git" target="_blank" class="source-code-btn">View Source Code</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h3>Contact Me</h3>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>LinkedIn: <a href="https://linkedin.com/in/aditi-s-984223172" target="_blank">aditi-s-984223172</a></p>
+            <p>Email: <a href="mailto:aditisharmapctebtech21@gmail.com">aditisharmapctebtech21@gmail.com</a></p>
+            <p>Phone No: 7888370463</p>
+            <p><a href="resume.pdf" download>Download My Resume</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aditi Sharma. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        particlesJS("particles", {
+            "particles": {
+                "number": { "value": 40, "density": { "enable": true, "value_area": 800 }},
+                "color": { "value": "#ffffff" },
+                "shape": {
+                    "type": "circle",
+                    "stroke": { "width": 0, "color": "#000000" },
+                    "polygon": { "nb_sides": 5 },
+                    "image": { "src": "img/github.svg", "width": 100, "height": 100 }
+                },
+                "opacity": { "value": 0.5, "random": false },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
+                "move": { "enable": true, "speed": 6 }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": { "enable": true, "mode": "repulse" },
+                    "onclick": { "enable": true, "mode": "push" }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
